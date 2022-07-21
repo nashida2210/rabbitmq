@@ -3,11 +3,11 @@ app:
     code: RABBITMQ
     notify: eachakala@ecloudcontrol
 build:
-    version: 3.8
+    version: 3.9
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: rabbitmq-3.8
+    image_template: rabbitmq-3.9
 deploy:
     context: eeshaachakala1/DEV
     replicas: 1
