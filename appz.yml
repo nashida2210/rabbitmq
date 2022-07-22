@@ -7,7 +7,7 @@ build:
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: rabbitmq-3.9ve
+    image_template: rabbitmq-3.9
 deploy:
     context: nashida2210/DEV
     replicas: 1
@@ -23,4 +23,4 @@ properties:
     RABBITMQ_DEFAULT_USER: admin
     RABBITMQ_DEFAULT_PASS:
        vault: RABBITMQ_DEFAULT_PASS
-    revision : 6
+    revision : 7
